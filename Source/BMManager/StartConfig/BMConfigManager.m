@@ -199,7 +199,7 @@
     
 #ifdef DEBUG
     [WXDebugTool setDebug:YES];
-    [WXLog setLogLevel:WeexLogLevelLog];
+    [WXLog setLogLevel:WXLogLevelLog];
     [[BMDebugManager shareInstance] show];
 #else
     [WXDebugTool setDebug:NO];

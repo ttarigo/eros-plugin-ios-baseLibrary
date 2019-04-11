@@ -231,6 +231,8 @@ const char *  _attrKey = "_attr";
     if ([[self valueForKey:@"keyboardEvent"] boolValue]) {
         [self fireEvent:@"keyboard" params:@{ @"isShow": @YES }];
     }
+    
+    [self setValue:@NO forKey:@"_keyboardHidden"];
 }
 
 @end
